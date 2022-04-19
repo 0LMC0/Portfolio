@@ -1,0 +1,180 @@
+
+/* ********************************************************************************************************
+*************************************** Made by Lautaro Caceres *******************************************
+***********************************************************************************************************/
+
+/* Font Poppins import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--principal-font);
+}
+
+
+
+/* Variables */
+
+:root {
+
+  --principal-color: rgb(21, 195, 238);
+  --principal-font: 'Inter', sans-serif;
+
+  /* secondary variables */
+
+  --secondary-color: #fff;
+}
+
+/* Codigos generales */
+
+  .title-section{
+    font-weight: 700;
+    margin: 80px 0 80px 0;
+    font-size: 5em;
+  }
+
+/* hero */
+
+.cont-hero{
+  height: 76vh;
+}
+
+/* Burguer menu animation style */
+
+.container-menu-animation{
+    display: flex;
+    justify-content: end;
+    
+    margin:0;
+    padding:20px;
+  }
+  
+  .label-menu-animation{
+    display:flex;
+    padding:30px 30px;
+    border-radius: 50px;
+    background-color: var(--principal-color);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    flex-direction:column;
+    width: 140px;;
+    cursor:pointer;
+  }
+  
+  .label-menu-animation .span-menu-animation{
+    background: rgb(0, 0, 0);
+    border-radius:10px;
+    height:7px;
+    margin: 7px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+  }
+  
+  
+  .span-menu-animation:nth-of-type(1){
+    width:50%;
+    
+  }
+  
+  .span-menu-animation:nth-of-type(2){
+    width:100%;
+  }
+  
+  
+  .span-menu-animation:nth-of-type(3){
+    width:75%;
+   
+  }
+  
+  .input-menu-animation[type="checkbox"]{
+    display:none;
+  }
+  
+  
+  .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(8px,0px)
+  }
+  
+  
+  .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(2){
+    
+    transform-origin:top;
+    transform:rotatez(-45deg)
+  }
+  
+  
+  .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(3){
+    
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(30px,-11px) rotatez(45deg);
+  
+  }
+
+
+  /* title-principal */
+
+  .title{
+    font-weight: 600;
+    font-size: 120px;
+    
+  }
+  
+
+   .dot {
+     position: relative;
+     bottom: 20px;
+     right: 3px;     
+    height: 400px;
+    width: 400px;
+    background-color: var(--principal-color);
+    border-radius: 50%;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+  }
+
+  .download-cv{
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    right: 250px;
+    top: 140px;
+  }
+  .download-cv img{
+    width: 350px;
+  }
+
+  .hover-arrow{
+    color: #dc3545;
+    font-weight: 800;
+    margin-top: 25px;
+    letter-spacing: 3px;
+    margin-left: 75px;
+    font-size: 15px;
+    transform: rotate(-90deg);  
+  }
+
+  /* Finish hero */
+
+  /* Section-1 starts */
+  .arrow-section-1{
+    position: absolute;
+    background-color: var(--principal-color);
+    border-radius: 50px 50px 0 0;
+    width: 75px;
+    text-align: center;
+    height: 75px;
+    top: 90%;
+    font-size: 50px;
+  }
+
+  .section-1-bg{
+    background-color: var(--principal-color);
+  }
+  /* Section-2 ends */
+  
