@@ -8,12 +8,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
+
+/* Global variables */
 *{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--principal-font);
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -27,14 +34,16 @@
 
   /* secondary variables */
 
-  --secondary-color: #fff;
+  --secondary-color: #dc3545;
+  --third-color: #fff;
+
 }
 
 /* Codigos generales */
 
   .title-section{
     font-weight: 700;
-    margin: 80px 0 80px 0;
+    margin: 80px 0 30px 0;
     font-size: 5em;
   }
 
@@ -138,19 +147,19 @@
     display: inline-block;
   }
 
-  .download-cv{
+  .svgHero{
     z-index: 1;
     text-align: center;
     position: absolute;
     right: 250px;
     top: 140px;
   }
-  .download-cv img{
+  .svgHero img{
     width: 350px;
   }
 
   .hover-arrow{
-    color: #dc3545;
+    color: var(--secondary-color);
     font-weight: 800;
     margin-top: 25px;
     letter-spacing: 3px;
@@ -164,6 +173,7 @@
   /* Section-1 starts */
   .arrow-section-1{
     position: absolute;
+    color: #fff;
     background-color: var(--principal-color);
     border-radius: 50px 50px 0 0;
     width: 75px;
@@ -175,6 +185,64 @@
 
   .section-1-bg{
     background-color: var(--principal-color);
+  }
+
+  /* button to switch between lenguages */
+
+  .english-spanish-label{
+    position: relative;
+  }
+
+  .english-spanish-switch{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .english-spanish-text{
+    color: var(--third-color);
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    transition: .4s;
+    margin: 20px;
+  }
+
+  .english-spanish-slide{
+    box-shadow: 5px 5px 0px 0px rgba(255, 0, 0, 0.5);
+    position: relative;
+    left: 500px;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+    background-color: rgb(28, 28, 116);
+    transition: .4s;
+    width: 120px;
+    height: 50px;
+  }
+
+  .english-spanish-slide:before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 45px;
+    background-image: url(../img/banderas/usa.png);
+    background-position: center;
+    background-size: cover;
+    transition: .4s;
+    top: 5px;
+    left: 15px;
+  }
+
+  .english-spanish-switch:checked +.english-spanish-slide{
+    background-color: rgb(0, 92, 132);
+    box-shadow: 5px 5px 0px 0px rgb(255, 255, 255);
+  }
+
+  .english-spanish-switch:checked + .english-spanish-slide:before {
+    transform: translateX(45px);
+    background-image: url(../img/banderas/arg.png);
   }
   /* Section-2 ends */
   
