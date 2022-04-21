@@ -9,6 +9,27 @@
 /* font-family: 'Roboto', sans-serif; */
 
 
+/*  Scrollbar */
+
+::-webkit-scrollbar-track
+{
+	--webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #dc3545;
+	border: 2px solid #555555;
+}
+
+
 /* Global variables */
 *{
     scroll-behavior: smooth;
@@ -20,7 +41,10 @@
 
 a, a:hover, a:focus, a:active {
   text-decoration: none;
-  color: inherit;
+}
+
+.mt-100{
+  margin-top: 100px;
 }
 
 
@@ -67,10 +91,8 @@ a, a:hover, a:focus, a:active {
     display:flex;
     padding:30px 30px;
     border-radius: 50px;
-    background-color: var(--principal-color);
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
     flex-direction:column;
-    width: 140px;;
+    width: 140px;
     cursor:pointer;
   }
   
@@ -244,5 +266,42 @@ a, a:hover, a:focus, a:active {
     transform: translateX(45px);
     background-image: url(../img/banderas/arg.png);
   }
+  /* Section-1 ends */
+
+  /* section-2 Starts */
+  .swiper {
+    width: 100%;
+    margin: 75px 0 75px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper a, a:hover, a:focus, a:active{
+    text-decoration: none;
+  }
+
+  .urlProjects{
+    background-color: var(--third-color);
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
   /* Section-2 ends */
+  
+
   

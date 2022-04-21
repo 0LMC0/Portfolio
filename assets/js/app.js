@@ -1,7 +1,9 @@
 // Made by Lautaro Caceres //
 
+// Call to input
 const toggle = document.querySelector('.english-spanish-switch');
 
+//Search if the input is checked or not and then makes the changes in the appropriate text
 toggle.addEventListener('click', () =>{
   const englishSpanish = document.querySelector('.english-spanish-text');
   const profesionalProfile = document.querySelector('.titleEsEn');
