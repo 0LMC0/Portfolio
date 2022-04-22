@@ -13,7 +13,7 @@
 
 ::-webkit-scrollbar-track
 {
-	--webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+	--webkit-box-shadow:5px 5px 0px 0px rgba(0, 0, 0, 0.775);
 	background-color: #F5F5F5;
 }
 
@@ -165,7 +165,7 @@ a, a:hover, a:focus, a:active {
     width: 400px;
     background-color: var(--principal-color);
     border-radius: 50%;
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
     display: inline-block;
   }
 
@@ -232,7 +232,7 @@ a, a:hover, a:focus, a:active {
   }
 
   .english-spanish-slide{
-    box-shadow: 5px 5px 0px 0px rgba(255, 0, 0, 0.5);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
     position: relative;
     left: 500px;
     margin: 20px;
@@ -259,16 +259,143 @@ a, a:hover, a:focus, a:active {
 
   .english-spanish-switch:checked +.english-spanish-slide{
     background-color: rgb(0, 92, 132);
-    box-shadow: 5px 5px 0px 0px rgb(255, 255, 255);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
   }
 
   .english-spanish-switch:checked + .english-spanish-slide:before {
     transform: translateX(45px);
     background-image: url(../img/banderas/arg.png);
   }
+ 
+
+  .btn-custom-cv{
+    background:#ffffff;
+    overflow: hidden;
+    border:none;
+    width:180px;
+    height:60px;
+    border-radius:9px;
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+    box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
+    transform: translateX(-50%) translateY(-50%);
+    cursor:pointer;
+  }
+  
+  .btn-custom-cv span{
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgb(0, 0, 0);
+      transition: 0.1s;
+      font-size: 15px;
+      position: fixed;
+      transform: translateX(-50%) translateY(-50%);
+      opacity:1;
+  }
+
+  .btn-custom-cv svg{
+    display: none;
+  }
+  .btn-custom-cv:active{
+    background:#3b3b3b;
+  }
+  
+  .btn-custom-cv:active  span{
+    font-size:22px;
+  }
+  
+  .active-cv .btn-custom-cv{
+     background: #3c3c3c !important; 
+  }
+  .active-cv span{
+    opacity:0;
+    transition:0.7s;
+    transition-delay: 0.9s;
+    animation-timing-function: ease-out;
+  }
+  
+  .active-cv svg{
+      width: 28px;
+      position: absolute;
+      left: 80px;
+      top: 15px;
+      animation: icona;
+      animation-iteration-count: 1;
+      animation-duration: 1.4s;
+      display:block; 
+      animation-timing-function: ease-out;
+      opacity:1;
+  } 
+  
+  @keyframes icona { 
+    0% {opacity:0;}
+  90% {opacity:0;height: 15px;margin: 25px auto;} 
+  100% {opacity:1;height: 25px;} 
+}
+  
+  .active-cv div{
+    width: 200px;
+    height: 60px;
+    margin: -30px -6px;
+    z-index: -1;
+    position: absolute;
+    background: #3b3b3b;
+    animation: loading;
+    animation-duration: 0.5s; 
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1,.27,.52,.67);
+    
+  }
+  
+  @keyframes loading {
+        0% {width:0px;margin: -30px -6px;}
+        10% {width:10px;}
+        20% {width:30px;} 
+      100% {width: 200px;background: #525252;margin: -30px -6px;} 
+  }
+ 
   /* Section-1 ends */
 
   /* section-2 Starts */
+
+  /* arrow animation */
+  .arrow{
+
+    transform: rotate(-90deg);
+    margin: 40px 0 40px 0;
+  }
+  .arrow span{
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-bottom: 5px solid #000000;
+      border-right: 5px solid #000000;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+      animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+      animation-delay: -0.4s;
+  }
+  @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(45deg) translate(-20px,-20px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(45deg) translate(20px,20px);
+      }
+  }
+
   .swiper {
     width: 100%;
     margin: 75px 0 75px 0;
@@ -281,10 +408,9 @@ a, a:hover, a:focus, a:active {
   }
 
   .urlProjects{
-    background-color: var(--third-color);
+    background-color: black;
     font-size: 20px;
-    box-shadow: 5px 5px 0px 0px rgba(0, 136, 255, 0.5);
-    border: 2px solid #000;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
     padding: 10px;
     font-weight: 700;
     width: 100%;
@@ -297,7 +423,7 @@ a, a:hover, a:focus, a:active {
     width: 500px;
     height: 500px;
   }
-
+  
   .swiper-slide img {
     display: block;
     width: 100%;
