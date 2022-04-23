@@ -15,10 +15,13 @@ toggle.addEventListener('click', () =>{
 
 // btn cv download
 
-
-
+// calling the button
 const btnCv= document.querySelector('.btn-custom-cv');
 
-btnCv.addEventListener('click', function handleClick(event) {
-  event.target.classList.add('active-cv');
+// listening to the button and then applying the active class
+btnCv.addEventListener('click', ()=> {
+  btnCv.classList.add('active-cv');
 });
+
+
+

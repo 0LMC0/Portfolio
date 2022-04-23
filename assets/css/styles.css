@@ -75,6 +75,8 @@ a, a:hover, a:focus, a:active {
 
 .cont-hero{
   height: 76vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Burguer menu animation style */
@@ -152,42 +154,31 @@ a, a:hover, a:focus, a:active {
 
   .title{
     font-weight: 600;
-    font-size: 120px;
+    font-size: 90px;
     
   }
-  
 
-   .dot {
-     position: relative;
-     bottom: 20px;
-     right: 3px;     
-    height: 400px;
-    width: 400px;
-    background-color: var(--principal-color);
-    border-radius: 50%;
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
-    display: inline-block;
+  .gifHero{
+   display: flex;
+   justify-content: center;
   }
-
-  .svgHero{
+  .gifHero img{
+    width: 420px;
     z-index: 1;
-    text-align: center;
     position: absolute;
-    right: 250px;
-    top: 140px;
-  }
-  .svgHero img{
-    width: 350px;
+    right: 200px;
+    top: 100px;
+    
   }
 
-  .hover-arrow{
+  .gifHero p{
     color: var(--secondary-color);
     font-weight: 800;
-    margin-top: 25px;
+    position: absolute;
+    margin-top: 150px;
     letter-spacing: 3px;
-    margin-left: 75px;
-    font-size: 15px;
-    transform: rotate(-90deg);  
+    font-size: 30px;
+    transform: rotate(90deg);  
   }
 
   /* Finish hero */
@@ -269,14 +260,14 @@ a, a:hover, a:focus, a:active {
  
 
   .btn-custom-cv{
-    background:#ffffff;
+    background:var(--secondary-color);
     overflow: hidden;
     border:none;
     width:180px;
     height:60px;
     border-radius:9px;
     position: absolute;
-    bottom: 40px;
+    bottom: 130px;
     left: 90px;
     box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
     transform: translateX(-50%) translateY(-50%);
@@ -284,9 +275,9 @@ a, a:hover, a:focus, a:active {
   }
   
   .btn-custom-cv span{
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       font-weight: 700;
-      color: rgb(0, 0, 0);
+      color:var(--third-color);
       transition: 0.1s;
       font-size: 15px;
       position: fixed;
@@ -298,11 +289,11 @@ a, a:hover, a:focus, a:active {
     display: none;
   }
   .btn-custom-cv:active{
-    background:#3b3b3b;
+    background:#a82431;
   }
-  
+
   .btn-custom-cv:active  span{
-    font-size:22px;
+    font-size:16px;
   }
   
   .active-cv .btn-custom-cv{
