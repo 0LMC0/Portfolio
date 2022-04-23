@@ -7,6 +7,7 @@ const toggle = document.querySelector('.english-spanish-switch');
 toggle.addEventListener('click', () =>{
   const englishSpanish = document.querySelector('.english-spanish-text');
   const profesionalProfile = document.querySelector('.titleEsEn');
+  
 
   profesionalProfile.textContent = toggle.checked ? 'Perfil Profesional' : 'Profesional Profile'
 
