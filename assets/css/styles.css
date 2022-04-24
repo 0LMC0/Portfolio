@@ -163,12 +163,32 @@ a, a:hover, a:focus, a:active {
    justify-content: center;
   }
   .gifHero img{
-    width: 420px;
+    width: 450px;
     z-index: 1;
     position: absolute;
     right: 200px;
     top: 100px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+
+  .contact-button-hero{
+    height: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    top: 20%;
+    padding: 10px;
+    z-index: 99;
+    font-weight: 700;
+    right: 240px;
     
+  }
+
+  .contact-button-hero:hover{
+    color: rgb(211, 6, 6);
   }
 
   .line-social-media-1{
@@ -496,7 +516,7 @@ a, a:hover, a:focus, a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     padding: 10px;
     position: relative;
     max-width: 940px;
@@ -650,6 +670,19 @@ a, a:hover, a:focus, a:active {
   }
   /* Contact form end */
   
+  /* footer start */
+  /* footer end */
+
+  .footer{
+    background-color: rgb(45, 45, 45);
+  }
+  footer{
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
   /* Media querys */
   @media screen and (max-width: 850px) {
     .contact-wrapper {
