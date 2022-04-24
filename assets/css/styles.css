@@ -19,14 +19,14 @@
 
 ::-webkit-scrollbar
 {
-	width: 10px;
+	width: 15px;
 	background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-thumb
 {
+  border-radius: 10px;
 	background-color: #dc3545;
-	border: 2px solid #555555;
 }
 
 
@@ -89,13 +89,13 @@ a, a:hover, a:focus, a:active {
   }
   
   .label-menu-animation{
-    z-index: 3;
     display:flex;
     padding:30px 30px;
     border-radius: 50px;
     flex-direction:column;
     width: 140px;
     cursor:pointer;
+    z-index: 9;
   }
   
   .label-menu-animation .span-menu-animation{
@@ -129,26 +129,85 @@ a, a:hover, a:focus, a:active {
   
   
   .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(1){
+    background: #fff;
     transform-origin:bottom;
     transform:rotatez(45deg) translate(8px,0px)
   }
   
   
   .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(2){
-    
+    background: #fff;
     transform-origin:top;
     transform:rotatez(-45deg)
   }
   
   
   .input-menu-animation[type="checkbox"]:checked ~ .span-menu-animation:nth-of-type(3){
-    
+    background: #fff;
     transform-origin:bottom;
     width:50%;
     transform: translate(30px,-11px) rotatez(45deg);
   
   }
 
+  .menu{
+    background: #171717;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 100px;
+    z-index: 8;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu.is-active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+ 
+
+  .menu-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .menu-list-item:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  .menu-link{
+    position: relative;
+    display: inline-flex;
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--third-color);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .menu-link:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    display: inline-flex;
+    background: var(--principal-color);
+    transition: .3s;
+  }
+
+  .menu-link:hover:after{
+    width: 100%;
+  }
 
   /* title-principal */
 
@@ -181,7 +240,7 @@ a, a:hover, a:focus, a:active {
     text-align: center;
     top: 20%;
     padding: 10px;
-    z-index: 99;
+    z-index: 5;
     font-weight: 700;
     right: 240px;
     

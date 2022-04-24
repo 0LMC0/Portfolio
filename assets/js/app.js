@@ -1,4 +1,23 @@
-// Made by Lautaro Caceres //
+////////////////////////////////////////// Made by Lautaro Caceres //////////////////////////////////////////
+
+// menu 
+
+const btnMenu = document.querySelector('.label-menu-animation');
+
+btnMenu.addEventListener('click', ()=> {
+  const toggleInput = document.querySelector('#check')
+  const menu = document.querySelector('.menu')
+
+  // it verificates that the input is checked or not and then add or remove the class that activates the menu
+
+  toggleInput.checked ? menu.classList.add('is-active') : menu.classList.remove('is-active');
+  
+});
+
+
+// listening to the button and then applying the active class
+
+
 
 // Call to input
 const toggle = document.querySelector('.english-spanish-switch');
@@ -23,5 +42,6 @@ const btnCv= document.querySelector('.btn-custom-cv');
 btnCv.addEventListener('click', ()=> {
   btnCv.classList.add('active-cv');
 });
+
 
 
