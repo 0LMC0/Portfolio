@@ -19,7 +19,7 @@
 
 ::-webkit-scrollbar
 {
-	width: 15px;
+	width: 8px;
 	background-color: #F5F5F5;
 }
 
@@ -48,7 +48,6 @@ a, a:hover, a:focus, a:active {
 }
 
 
-
 /* Variables */
 
 :root {
@@ -67,8 +66,8 @@ a, a:hover, a:focus, a:active {
 
   .title-section{
     font-weight: 700;
-    margin: 80px 0 30px 0;
-    font-size: 5em;
+    margin: 80px 0 10px 0;
+    font-size: 3em;
   }
 
 /* hero */
@@ -85,7 +84,7 @@ a, a:hover, a:focus, a:active {
     display: flex;
     justify-content: end;
     margin:0;
-    padding:20px;
+    padding:10px;
   }
   
   .label-menu-animation{
@@ -93,7 +92,7 @@ a, a:hover, a:focus, a:active {
     padding:30px 30px;
     border-radius: 50px;
     flex-direction:column;
-    width: 140px;
+    width: 130px;
     cursor:pointer;
     z-index: 9;
   }
@@ -151,7 +150,7 @@ a, a:hover, a:focus, a:active {
   }
 
   .menu{
-    background: #171717;
+    background: var(--principal-color);
     display: flex;
     align-items: center;
     position: fixed;
@@ -201,7 +200,7 @@ a, a:hover, a:focus, a:active {
     width: 0;
     height: 5px;
     display: inline-flex;
-    background: var(--principal-color);
+    background: var(--third-color);
     transition: .3s;
   }
 
@@ -332,18 +331,20 @@ a, a:hover, a:focus, a:active {
   /* Section-1 starts */
   .arrow-section-1{
     position: absolute;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 50px 50px 0 0 ;
     background-color: var(--principal-color);
-    border-radius: 50px 50px 0 0;
     width: 75px;
     text-align: center;
     height: 75px;
-    top: 90%;
-    font-size: 50px;
+    top: 87%;
+    font-size: 70px;
+    padding-bottom: 100px;
   }
 
   .section-1-bg{
     background-color: var(--principal-color);
+    padding-bottom: 500px;
   }
 
   /* button to switch between lenguages */
@@ -360,12 +361,13 @@ a, a:hover, a:focus, a:active {
   }
 
   .english-spanish-text{
-    color: var(--third-color);
+    color: #000;
     font-size: 20px;
     text-align: center;
     display: block;
     transition: .4s;
-    margin: 20px;
+    margin: 20px 10px 0;
+
   }
 
   .english-spanish-slide{
@@ -373,6 +375,7 @@ a, a:hover, a:focus, a:active {
     position: relative;
     left: 500px;
     margin: 20px;
+    margin-top: 30px;
     display: block;
     cursor: pointer;
     background-color: rgb(28, 28, 116);
@@ -429,11 +432,12 @@ a, a:hover, a:focus, a:active {
       position: fixed;
       transform: translateX(-50%) translateY(-50%);
       opacity:1;
+    }
+    
+    .btn-custom-cv svg{
+      display: none;
   }
-
-  .btn-custom-cv svg{
-    display: none;
-  }
+  
   .btn-custom-cv:active{
     background:#a82431;
   }
@@ -497,23 +501,96 @@ a, a:hover, a:focus, a:active {
 
   /* section-2 Starts */
 
+  .skills-glass{
+    position: absolute;
+    top: 1100px;
+    left: 125px;
+    width: 1100px;
+    height: 700px;
+    padding: 20px 50px ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px 11px rgba(0,0,0,0.1);
+    backdrop-filter: blur(11px) saturate(118%);
+    -webkit-backdrop-filter: blur(11px) saturate(118%);
+    background-color: rgba(255, 255, 255, 0.54);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  
+  .item-skills{
+    width: 90%;
+    height: 90%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(11px) saturate(118%);
+    -webkit-backdrop-filter: blur(11px) saturate(118%);
+    background-color: rgba(255, 255, 255, 0.289);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+
+  .item-skills .icon-skills{
+    font-size: 100px;
+  }
+
+  .item-skills h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .item-skills .bxl-html5{
+    color: rgb(252, 92, 0);
+  }
+
+  .item-skills .bxl-css3{
+    color: rgb(0, 25, 252);
+  }
+
+  .item-skills .bxl-javascript{
+    color: rgb(252, 248, 0);
+  }
+
+  .item-skills .bxl-react{
+    color: rgb(0, 244, 252);
+  }
+
+  .item-skills .bxl-git{
+    color: rgb(252, 92, 0);
+  }
+
+  .item-skills .bxs-user-check{
+    color: rgb(0, 252, 17);
+  }
+
+  .item-skills .bx-trending-up{
+    color: rgb(252, 0, 0);
+  }
+
   /* arrow animation */
   .arrow{
     position: relative;
-    left: 45%;
+    left: 48%;
     width: 50px;
-    transform: rotate(-90deg);
+    /* transform: rotate(90deg); */
     margin: 40px 0 40px 0;
   }
   .arrow span{
       display: inline;
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
       border-bottom: 5px solid #000000;
       border-right: 5px solid #000000;
       transform: rotate(45deg);
       margin: -10px;
       animation: animate 2s infinite;
+
   }
   .arrow span:nth-child(2){
       animation-delay: -0.2s;
@@ -536,16 +613,15 @@ a, a:hover, a:focus, a:active {
   }
 
   .swiper {
-    width: 100%;
+    width: 55%;
+    height: 310px;
     margin: 75px 0 75px 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
-
+  
   .swiper a, a:hover, a:focus, a:active{
     text-decoration: none;
   }
-
+  
   .urlProjects{
     background-color: black;
     font-size: 20px;
@@ -555,22 +631,57 @@ a, a:hover, a:focus, a:active {
     width: 100%;
     border-radius: 50px;
   }
-
+  
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 500px;
-    height: 500px;
+    height: 250px;
+    transition: .4s;
+  }
+
+  .swiper-slide:hover img {
+    opacity: 0.1;
+  }
+
+  .swiper-hover-projects {
+    transition: .4s;
+    padding: 50px 0;
+    color: #010101;
+    opacity: 0;
+    transform: translatey(-400px);
+  }
+
+  .swiper-hover-projects .btn{
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .swiper-hover-projects:hover {
+    opacity: 1;
+    transform: translatey(-250px);
   }
   
   .swiper-slide img {
+    border-radius: 15px;
     display: block;
     width: 100%;
   }
+
   /* Section-2 ends */
 
   /* Contact form starts */
+
+  #projects-section{
+    margin-top: 300px;
+  }
+
+  #contact-section{
+    background-color: var(--principal-color);
+  }
   
+
   .contact-wrapper {
     display: flex;
     flex-direction: row;
