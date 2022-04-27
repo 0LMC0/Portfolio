@@ -47,6 +47,43 @@ a, a:hover, a:focus, a:active {
   margin-top: 100px;
 }
 
+.code {
+
+  font-family: Consolas,"courier new";
+  color: rgb(195, 195, 195);
+  background-color: #1a223d;
+  font-size: 25px;
+  width: 35%;
+  margin: 100px 0 100px 430px;
+  border-radius: 50px;
+}
+
+
+.text-blue-code{
+  color: var(--principal-color);
+  font-family: Consolas,"courier new";
+}
+
+.text-purple-code{
+  color: rgb(208, 0, 255);
+  font-family: Consolas,"courier new";
+
+}
+
+.text-yellow-code{
+  color: rgb(255, 234, 0);
+  font-family: Consolas,"courier new";
+
+}
+
+.text-lightblue-code{
+  color: rgb(0, 238, 255);
+  font-family: Consolas,"courier new";
+
+}
+
+
+
 
 /* Variables */
 
@@ -73,6 +110,7 @@ a, a:hover, a:focus, a:active {
 /* hero */
 
 .cont-hero{
+  margin-top: 5rem;
   height: 76vh;
   display: flex;
   justify-content: space-between;
@@ -506,7 +544,7 @@ a, a:hover, a:focus, a:active {
     top: 1100px;
     left: 125px;
     width: 1100px;
-    height: 700px;
+    height: 600px;
     padding: 20px 50px ;
     border-radius: 30px;
     box-shadow: 0px 0px 14px 11px rgba(0,0,0,0.1);
@@ -536,7 +574,7 @@ a, a:hover, a:focus, a:active {
 
 
   .item-skills .icon-skills{
-    font-size: 100px;
+    font-size: 60px;
   }
 
   .item-skills h4{
@@ -609,10 +647,10 @@ a, a:hover, a:focus, a:active {
       100%{
           opacity: 0;
           transform: rotate(45deg) translate(20px,20px);
+        }
       }
-  }
-
-  .swiper {
+      
+      .swiper {
     width: 55%;
     height: 310px;
     margin: 75px 0 75px 0;
@@ -639,11 +677,12 @@ a, a:hover, a:focus, a:active {
     height: 250px;
     transition: .4s;
   }
-
+  
   .swiper-slide:hover img {
     opacity: 0.1;
+    transition: .4s;
   }
-
+  
   .swiper-hover-projects {
     transition: .4s;
     padding: 50px 0;
@@ -674,7 +713,7 @@ a, a:hover, a:focus, a:active {
   /* Contact form starts */
 
   #projects-section{
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   #contact-section{

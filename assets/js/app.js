@@ -43,5 +43,3 @@ btnCv.addEventListener('click', ()=> {
   btnCv.classList.add('active-cv');
 });
 
-
-
