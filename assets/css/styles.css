@@ -54,7 +54,7 @@ a, a:hover, a:focus, a:active {
   background-color: #1a223d;
   font-size: 25px;
   width: 35%;
-  margin: 100px 0 100px 430px;
+  margin: 0 100px 100px 100px;
   border-radius: 50px;
 }
 
@@ -110,10 +110,11 @@ a, a:hover, a:focus, a:active {
 /* hero */
 
 .cont-hero{
-  margin-top: 5rem;
-  height: 76vh;
+    height: 90vh;
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 /* Burguer menu animation style */
@@ -127,6 +128,7 @@ a, a:hover, a:focus, a:active {
   
   .label-menu-animation{
     display:flex;
+
     padding:30px 30px;
     border-radius: 50px;
     flex-direction:column;
@@ -251,21 +253,24 @@ a, a:hover, a:focus, a:active {
   .title{
     font-weight: 600;
     font-size: 90px;
-    
   }
 
   .gifHero{
    display: flex;
-   justify-content: center;
+   position: relative;
+   top: -15rem;
+   width: 5rem;
   }
+
+  .gifHero a{
+    position: absolute;
+    top: 150px;
+    right: -200px;
+  }
+
   .gifHero img{
-    width: 450px;
     z-index: 1;
     position: absolute;
-    right: 200px;
-    top: 100px;
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
   }
 
   .contact-button-hero{
@@ -311,7 +316,7 @@ a, a:hover, a:focus, a:active {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 100px;
+    bottom: 10%;
     right: 60px;
     padding: 0;
     margin: 0;
@@ -382,13 +387,15 @@ a, a:hover, a:focus, a:active {
 
   .section-1-bg{
     background-color: var(--principal-color);
-    padding-bottom: 500px;
+    padding-bottom: 300px;
   }
 
   /* button to switch between lenguages */
 
   .english-spanish-label{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .english-spanish-switch{
@@ -411,9 +418,7 @@ a, a:hover, a:focus, a:active {
   .english-spanish-slide{
     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.775);
     position: relative;
-    left: 500px;
     margin: 20px;
-    margin-top: 30px;
     display: block;
     cursor: pointer;
     background-color: rgb(28, 28, 116);
@@ -453,12 +458,10 @@ a, a:hover, a:focus, a:active {
     width:180px;
     height:60px;
     border-radius:9px;
-    position: absolute;
-    bottom: 130px;
-    left: 90px;
     box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
     transform: translateX(-50%) translateY(-50%);
     cursor:pointer;
+    margin: 3em 0 0 5em;
   }
   
   .btn-custom-cv span{
@@ -540,10 +543,9 @@ a, a:hover, a:focus, a:active {
   /* section-2 Starts */
 
   .skills-glass{
-    position: absolute;
-    top: 1100px;
-    left: 125px;
-    width: 1100px;
+    position: relative;
+    top: -23em;
+    width: 100%;
     height: 600px;
     padding: 20px 50px ;
     border-radius: 30px;
@@ -610,6 +612,14 @@ a, a:hover, a:focus, a:active {
   .item-skills .bx-trending-up{
     color: rgb(252, 0, 0);
   }
+
+  /* project-section */
+
+  .recent-work-section{
+    position: relative;
+    top: -20em;
+  }
+
 
   /* arrow animation */
   .arrow{
@@ -711,10 +721,6 @@ a, a:hover, a:focus, a:active {
   /* Section-2 ends */
 
   /* Contact form starts */
-
-  #projects-section{
-    margin-top: 200px;
-  }
 
   #contact-section{
     background-color: var(--principal-color);
@@ -894,6 +900,9 @@ a, a:hover, a:focus, a:active {
 
   /* Media querys */
   @media screen and (max-width: 850px) {
+    .recent-work-section{
+        margin-top: 1100px;
+         }
     .contact-wrapper {
       display: flex;
       flex-direction: column;
@@ -915,6 +924,10 @@ a, a:hover, a:focus, a:active {
       width: 60px;
       height: 60px;
       line-height: 60px;
+    }
+    .gifHero{
+      opacity: 0;
+      visibility: hidden;
     }
   }
   
