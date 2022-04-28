@@ -110,7 +110,7 @@ a, a:hover, a:focus, a:active {
 /* hero */
 
 .cont-hero{
-    height: 90vh;
+    height: 75vh;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -125,10 +125,11 @@ a, a:hover, a:focus, a:active {
     margin:0;
     padding:10px;
   }
+
+
   
   .label-menu-animation{
     display:flex;
-
     padding:30px 30px;
     border-radius: 50px;
     flex-direction:column;
@@ -252,7 +253,7 @@ a, a:hover, a:focus, a:active {
 
   .title{
     font-weight: 600;
-    font-size: 90px;
+    font-size: 6rem;
   }
 
   .gifHero{
@@ -290,26 +291,6 @@ a, a:hover, a:focus, a:active {
 
   .contact-button-hero:hover{
     color: rgb(211, 6, 6);
-  }
-
-  .line-social-media-1{
-    position: absolute;
-    top: 45%;
-    right: 78px;
-    width: 2px;
-    height: 50px;
-    border: 3px solid #000;
-    border-radius: 50px;
-  }
-
-  .line-social-media-2{
-    position: absolute;
-    top: 85%;
-    right: 78px;
-    width: 2px;
-    height: 50px;
-    border: 3px solid #000;
-    border-radius: 50px;
   }
 
   .social-menu ul{
@@ -373,14 +354,13 @@ a, a:hover, a:focus, a:active {
 
   /* Section-1 starts */
   .arrow-section-1{
-    position: absolute;
     color: rgb(0, 0, 0);
     border-radius: 50px 50px 0 0 ;
     background-color: var(--principal-color);
-    width: 75px;
-    text-align: center;
+    width: 3rem;
+
     height: 75px;
-    top: 87%;
+    top: -500px;
     font-size: 70px;
     padding-bottom: 100px;
   }
@@ -563,6 +543,7 @@ a, a:hover, a:focus, a:active {
     margin: 30px;
     display: flex;
     align-items: center;
+    align-content: center;
     flex-direction: column;
     justify-content: center;
     border-radius: 30px;
@@ -660,9 +641,9 @@ a, a:hover, a:focus, a:active {
         }
       }
       
-      .swiper {
+  .swiper {
     width: 55%;
-    height: 310px;
+    height: 22em;
     margin: 75px 0 75px 0;
   }
   
@@ -695,21 +676,22 @@ a, a:hover, a:focus, a:active {
   
   .swiper-hover-projects {
     transition: .4s;
-    padding: 50px 0;
+    margin-top: 50px;
     color: #010101;
     opacity: 0;
-    transform: translatey(-400px);
+    transform: translatey(-300px);
   }
 
   .swiper-hover-projects .btn{
     width: 90%;
     height: 50px;
     font-size: 20px;
+    text-align: center;
   }
 
   .swiper-hover-projects:hover {
     opacity: 1;
-    transform: translatey(-250px);
+    /* transform: translatey(-250px); */
   }
   
   .swiper-slide img {
@@ -738,12 +720,12 @@ a, a:hover, a:focus, a:active {
   }
 
   .form-horizontal {
-    max-width: 400px;
+    max-width: 100%;
     font-weight: 400;
   }
   
   .form-control, textarea {
-    max-width: 400px;
+    max-width: 100%;
     background-color: #000;
     color: #fff;
     letter-spacing: 1px;
@@ -752,13 +734,13 @@ a, a:hover, a:focus, a:active {
   .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 400px;
+    width: 50%;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
   
   .alt-send-button {
-    width: 400px;
+    width: 100%;
     height: 34px;
     transition: all .2s ease-in-out;
   }
@@ -772,10 +754,10 @@ a, a:hover, a:focus, a:active {
   .alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
   }
-  
+/*   
   .direct-contact-container {
     max-width: 400px;
-  }
+  } */
 
   .contact-list {
     list-style-type: none;
@@ -898,11 +880,17 @@ a, a:hover, a:focus, a:active {
     justify-content: center;
   }
 
+
+
   /* Media querys */
+  @media screen and (max-width: 1200px) {
+    .gifHero{
+      display: none;  
+    }
+  }
+
+
   @media screen and (max-width: 850px) {
-    .recent-work-section{
-        margin-top: 1100px;
-         }
     .contact-wrapper {
       display: flex;
       flex-direction: column;
@@ -925,10 +913,9 @@ a, a:hover, a:focus, a:active {
       height: 60px;
       line-height: 60px;
     }
-    .gifHero{
-      opacity: 0;
-      visibility: hidden;
-    }
+    
+    
+    
   }
   
   @media screen and (max-width: 569px) {
@@ -965,13 +952,72 @@ a, a:hover, a:focus, a:active {
       height: 55px;
       line-height: 55px;
     }
+
+    .title-section{
+      font-weight: 700;
+      margin: 80px 0 10px 0;
+      font-size: 2em;
+    }
     
+    .title{
+      font-weight: 600;
+      font-size: 4rem;
+    }
+    .label-menu-animation{
+      display: none;
+    }
+
   }
 
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
     }
+    .english-spanish-text{
+      font-size: 1rem;
+    }
+    .list-item{
+      font-size: .7rem;
+    }
+    .arrow-section-1 i{
+      font-size: 2.5rem;
+      padding: 0;
+    }  
+    .item-skills{
+      margin: 0;
+      width: 100%;
+      padding: 5px;
+    }
+
+    .item-skills .icon-skills{
+      font-size: 25px;
+    }
+    .item-skills h4{
+       font-size: 15px;
+     }
+     .skills-glass{
+       height: 710px;
+     }
+     .swiper {
+      width: 100%;
+      height: 10.5em;
+      margin: 75px 0 75px 0;
+    }
+    .swiper-hover-projects{
+      margin-top: 50px;
+      font-size: 7px;
+      transform: translatey(-200px);
+    }
+    
+    .swiper-hover-projects .btn{
+      height: 4em;
+      font-size: 13px;
+    }
+
+  .swiper-hover-projects:hover {
+    opacity: 1;
+  }
+  
   }
 
   
