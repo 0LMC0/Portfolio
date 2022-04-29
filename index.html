@@ -206,9 +206,9 @@
                     <div class="recent-work-section">
 
                         <h2 class="title-section text-center">
-                            <span id=" ">My recent work</span><span class="text-danger">.</span>
+                            <span id="recentWork">My recent work</span><span class="text-danger">.</span>
                         </h2>
-                        <p class="text-center p-4">Here are a few design projects I've worked on recently.</p>
+                        <p id="projectsP" class="text-center p-4">Here are a few design projects I've worked on recently.</p>
                         
                         <div class="arrow d-flex flex-column justify-content-center align-content-center align-items-center" >
                             <span></span>
@@ -223,16 +223,16 @@
                                     <img src="assets/img/projects/practienda.com.png" />
                                     <div class="swiper-hover-projects">
                                         <a class="text-white btn btn-success" target="_blank" href="https://practienda.com/">Practienda.com  <i class='bx bx-link-external'></i></a>
-                                        <p class="m-3 text-center">As you can see I´m what they call an Entrepreneur, this Start up was Co-founded by me and my cousin, we make websites and web sistems such as Stock control sistems, appointment system and so on!</p>
+                                        <p id="practiendaText" class="m-3 text-center">As you can see I´m what they call an Entrepreneur, this Start up was Co-founded by me and my cousin, we make websites and web sistems such as Stock control sistems, appointment system and so on!</p>
                                         
                                     </div>
                                     
                                 </div>
                                 <div class="swiper-slide text-center">
                                     <img src="assets/img/projects/acruxproductos.com.png" />
-                                    <div class="swiper-hover-projects">
+                                    <div class="swiper-hover-projects" >
                                         <a class="text-white btn btn-info" target="_blank" href="https://acruxproductos.com.ar/">Acruxproductos.com   <i class='bx bx-link-external'></i></a>
-                                        <p class="m-3 text-center">A website made with HTML5, CSS3, and some of Javascript. a website for the sale of gym supplements with a contact form and a lot of animations!</p>
+                                        <p id="acruxText" class="m-3 text-center">A website made with HTML5, CSS3, and some of Javascript. a website for the sale of gym supplements with a contact form and a lot of animations!</p>
                                         
                                     </div>
                                 </div>
@@ -268,8 +268,8 @@
     <section>
         <div class="container text-center">
             <hr>
-            <h3 class="m-5">I’m always open to discussing new opportunities of work or partnership opportunities!</h3>
-            <p class="h5">Left me your message down here and i will respond as soon as possible</p>
+            <h3 id="subtitleBt" class="m-5">I’m always open to discussing new opportunities of work or partnership opportunities!</h3>
+            <p id="paBt" class="h5">Left me your message down here and i will respond as soon as possible</p>
         </div>
         <div class="arrow d-flex flex-column justify-content-center align-content-center align-items-center" >
             <span></span>
@@ -286,7 +286,7 @@
                 <div class="container pb-5">
 
                     <h2 class="title-section text-center mt-0">
-                        <span>Contact Me</span><span class="text-danger">.</span>
+                        <span id="contactTitle">Contact Me</span><span class="text-danger">.</span>
                     </h2>
                 
                     <div class="contact-wrapper">
@@ -336,13 +336,13 @@
                   
                           <hr>
                           <ul class="social-media-list">
-                            <li><a href="#" target="_blank" class="contact-icon">
+                            <li><a href="https://www.linkedin.com/m/in/lautaro-caceres" target="_blank" class="contact-icon">
                                 <i class='bx bxl-linkedin' aria-hidden="true"></i></a>
                               </li> 
-                              <li><a href="#" target="_blank" class="contact-icon">
+                              <li><a href="https://www.instagram.com/whoslauty/" target="_blank" class="contact-icon">
                                 <i class='bx bxl-instagram' aria-hidden="true"></i></a>
                               </li> 
-                              <li><a href="#" target="_blank" class="contact-icon">
+                              <li><a href="https://github.com/0LMC0" target="_blank" class="contact-icon">
                                 <i class='bx bxl-github' aria-hidden="true"></i></a>
                               </li> 
                           </ul>
@@ -357,9 +357,9 @@
           </section>  
 
 
-        <section id="footer" class="footer p-5 text-center">
+        <section id="footer" class="footer p-5 text-center text-white" >
             <footer>
-                <p>Made by Lautaro Caceres with a lot of &#9749; and &#10084;</p>
+                <p id="footer">Made by Lautaro Caceres with a lot of &#9749; and &#10084;</p>
             </footer>
         </section>
     
@@ -391,11 +391,11 @@
             slidesPerView: 2,
             loop: true,
             coverflowEffect: {
-            rotate: 50,
+            rotate: 60,
             stretch: 0,
-            depth: 100,
+            depth: 200,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
             },
            
         });

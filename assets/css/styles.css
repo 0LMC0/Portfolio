@@ -602,7 +602,7 @@ a, a:hover, a:focus, a:active {
 
   .recent-work-section{
     position: relative;
-    top: -20em;
+    top: -15em;
   }
 
 
@@ -611,7 +611,6 @@ a, a:hover, a:focus, a:active {
     position: relative;
     left: 48%;
     width: 50px;
-    /* transform: rotate(90deg); */
     margin: 40px 0 40px 0;
   }
   .arrow span{
@@ -646,10 +645,9 @@ a, a:hover, a:focus, a:active {
       }
       
   .swiper {
-    width: 55%;
+    width: 60%;
     height: 22em;
-    margin: 75px 0 75px 0;
-  }
+    }
   
   .swiper a, a:hover, a:focus, a:active{
     text-decoration: none;
@@ -1004,7 +1002,7 @@ a, a:hover, a:focus, a:active {
      }
      .swiper {
       width: 100%;
-      height: 10.5em;
+      height: 11.5em;
       margin: 75px 0 75px 0;
     }
     .swiper-hover-projects{
