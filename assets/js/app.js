@@ -24,9 +24,36 @@ const toggle = document.querySelector('.english-spanish-switch');
 
 //Search if the input is checked or not and then makes the changes in the appropriate text
 toggle.addEventListener('click', () =>{
+  var redText = "<ul><li>First</li><li>Second</li><li>Third</li></ul>"; 
   const englishSpanish = document.querySelector('.english-spanish-text');
+  const title = document.querySelector('.titleHeroEnEs');
   const profesionalProfile = document.querySelector('.titleEsEn');
-  
+  const dev = document.querySelector('.developerEnEs');
+  const downloadBtn = document.querySelector('#downloadCv');
+  const letsTalkA = document.querySelector('.contact-button-hero');
+  const skillsTitle = document.querySelector('#skillsText');
+  const problemSkills = document.querySelector('#ProblemSolvingSkills');
+  const enterpreneurSkills = document.querySelector('#entrepreneurSkills');
+
+  enterpreneurSkills.textContent = toggle.checked ? 'Emprendedor' : "Entrepeneur"
+
+
+  problemSkills.textContent = toggle.checked ? 'Resolución de problemas' : "Problem Solving"
+
+
+  skillsTitle.textContent = toggle.checked ? 'Habilidades' : "Skills"
+
+
+  letsTalkA.textContent = toggle.checked ? 'Contactame!' : "Let's Talk!"
+
+
+  downloadBtn.textContent = toggle.checked ? 'Descargar Curriculum' : "Download Resume"
+
+
+  dev.textContent = toggle.checked ? 'Desarrollador Front-End Jr' : "Front-End Developer Jr"
+
+
+  title.textContent = toggle.checked ? 'Soy' : "I'm"
 
   profesionalProfile.textContent = toggle.checked ? 'Perfil Profesional' : 'Profesional Profile'
 

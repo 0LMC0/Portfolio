@@ -252,8 +252,9 @@ a, a:hover, a:focus, a:active {
   /* title-principal */
 
   .title{
-    font-weight: 600;
-    font-size: 6rem;
+    font-weight: 700;
+      margin: 80px 0 10px 0;
+      font-size: 6em;
   }
 
   .gifHero{
@@ -279,14 +280,13 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    top: 20%;
     padding: 10px;
     z-index: 5;
     font-weight: 700;
-    right: 240px;
-    
+    left: 85px;
+    top: 70px;
   }
 
   .contact-button-hero:hover{
@@ -444,7 +444,7 @@ a, a:hover, a:focus, a:active {
     margin: 3em 0 0 5em;
   }
   
-  .btn-custom-cv span{
+  .btn-custom-cv .text-button-cv{
       /* text-transform: uppercase; */
       font-weight: 700;
       color:var(--third-color);
@@ -594,6 +594,10 @@ a, a:hover, a:focus, a:active {
     color: rgb(252, 0, 0);
   }
 
+  .item-skills .bxl-bootstrap{
+    color: #7952b3;
+  }
+
   /* project-section */
 
   .recent-work-section{
@@ -734,7 +738,7 @@ a, a:hover, a:focus, a:active {
   .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
