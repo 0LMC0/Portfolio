@@ -10,7 +10,7 @@ btnMenu.addEventListener("click",()=>{
 
     // it verificates that the input is checked or not and then add or remove the class that activates the menu
   
-  e.checked?c.classList.add("is-active"):c.classList.remove("is-active")
+  a.checked?b.classList.add("is-active"):b.classList.remove("is-active")
 }
 );
 
