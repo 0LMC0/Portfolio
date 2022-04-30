@@ -953,12 +953,37 @@ a, a:hover, a:focus, a:active {
       height: 60px;
       line-height: 60px;
     }
+    .item-skills .icon-skills{
+      font-size: 30px;
+    }
+    .item-skills h4{
+       font-size: 15px;
+     }
+     .skills-glass{
+       height: 710px;
+     }
     
     
     
   }
   
   @media screen and (max-width: 569px) {
+    .title-thanks{
+      font-size:1.5em;
+    }
+    .item-skills{
+      margin: 8px;
+    }
+
+    .item-skills .icon-skills{
+      font-size: 20px;
+    }
+    .item-skills h4{
+       font-size: 15px;
+     }
+     .skills-glass{
+       height: 710px;
+     }
   
     .direct-contact-container, .form-wrapper {
       float: none;
@@ -1006,7 +1031,7 @@ a, a:hover, a:focus, a:active {
     .label-menu-animation{
       display: none;
     }
-
+    
   }
 
   @media screen and (max-width: 410px) {
@@ -1056,6 +1081,9 @@ a, a:hover, a:focus, a:active {
 
   .swiper-hover-projects:hover {
     opacity: 1;
+  }
+  .go-home{
+    width: 100%;
   }
   
   }
