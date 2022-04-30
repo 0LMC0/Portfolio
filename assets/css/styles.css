@@ -1031,6 +1031,13 @@ a, a:hover, a:focus, a:active {
     .label-menu-animation{
       display: none;
     }
+    .social-menu ul{
+      bottom: 4%;
+      right: 40px;
+    }
+    .code{
+      font-size: 1em;
+    }
     
   }
 
